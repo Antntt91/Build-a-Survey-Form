@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title"> Customer Service Survey </h1>
+        <p id="description"> Thank you for taking the time to help us improve the service</p>
+    </header>
+    
+
+<form id="survey-form">
+    <div class="form-control">
+        <label id="name-label" for="name"> Name </label>
+        <input id="name" type="text" name="name" placeholder="Enter name..." required>
+    </div>
+    <div class="form-control">
+        <label id="email-label" for="email"> Email </label>
+        <input id="email" type="email" name="email" placeholder="Enter email..." required>
+    </div>
+    <div class="form-control">
+        <label id="number-label" for="phone"> Phone </label>
+        <input id="number" type="number" name="phone" min="8" max="10" placeholder="Enter phone number..." required>
+    </div>
+   
+    <div class="form-control">
+        <label>
+            What service do you use?
+        </label>
+        <select id="dropdown" name="service">
+            <option disabled selected value>Select service</option>
+            <option value="web">Web Design</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="others">Others</option>
+          </select>
+    </div>
+    <div class="form-control">
+        <label>Are you satisfied with our service ? </label>
+        <label> <input name="satisfied" value="no" type="checkbox"> No </label>
+        <label> <input name="satisfied" value="yes" type="checkbox"> Yes </label>
+    </div>
+    <div class="form-control">
+        <label>Would you recommend to a friend? </label>
+        <label> <input name="recommend" value="not-sure" type="radio"> Not-sure </label>
+        <label> <input name="recommend" value="maybe" type="radio" checked> May be </label>
+        <label> <input name="recommend" value="definitely" type="radio"> Definitely </label>
+    </div>
+    <div class="form-control">
+        <label>Any comments or suggestions?</label>
+        <textarea
+        id="suggestions"
+        name="suggestions"
+        placeholder="Enter yoursuggestions here..."
+      ></textarea>
+    </div>
+    <button type="submit" id="submit" >
+        Submit
+    </button>
+  
+   
+</form>
+</body>
+</html>
